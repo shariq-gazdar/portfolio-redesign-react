@@ -1,6 +1,8 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Typewriter from "./components/Typewriter";
+import Projects from "./components/Projects";
+
 function App() {
   const lightUp = (e) => {
     let glow = document.querySelector(".glow");
@@ -48,7 +50,7 @@ function App() {
               About
             </a>
             <a
-              href="#Skills"
+              href="#Experience"
               className="text-white hover:text-orange-400 transition duration-200"
               id="ExpNav"
             >
@@ -142,6 +144,9 @@ function App() {
                 </span>
               </div>
             </div>
+          </div>
+          <div id="projects">
+            <Projects />
           </div>
         </div>
       </div>
