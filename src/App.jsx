@@ -2,6 +2,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Typewriter from "./components/Typewriter";
 import Projects from "./components/Projects";
+import Github from "./assets/github.svg";
+import Fiverr from "./assets/fiverr.svg";
+import Instagram from "./assets/instagram.svg";
+import Linkedin from "./assets/linkedin.svg";
 
 function App() {
   const lightUp = (e) => {
@@ -14,6 +18,7 @@ function App() {
     let id = e.target.parentNode.parentNode.id;
     let AboutNav = document.querySelector("#AboutNav");
     let ExpNav = document.querySelector("#ExpNav");
+    let ProjNav = document.querySelector("#ProjNav");
     console.log(id);
     if (id && id == "About") {
       AboutNav.className = "text-white font-black text-3xl";
@@ -21,8 +26,12 @@ function App() {
       AboutNav.className =
         "text-white hover:text-orange-400 transition duration-200 ";
       ExpNav.className = "text-white font-black text-3xl";
+    } else if (id && id == "projects") {
+      ProjNav.className = "text-white font-black text-3xl";
     } else {
       ExpNav.className =
+        "text-white hover:text-orange-400 transition duration-200";
+      ProjNav.className =
         "text-white hover:text-orange-400 transition duration-200";
     }
   };
@@ -56,7 +65,35 @@ function App() {
             >
               Experience
             </a>
+            <a
+              href="#Project"
+              className="text-white hover:text-orange-400 transition duration-200"
+              id="ProjNav"
+            >
+              Projects
+            </a>
           </nav>
+
+          <div className="socials flex gap-x-5 mt-24">
+            <a
+              href="https://www.instagram.com/shari_gazdar?igsh=MTRja2kxaTg0dXNyeA=="
+              target="_blank"
+            >
+              <img src={Instagram} alt="" className="w-10" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shariq-gazdar-7543462b3/"
+              target="_blank"
+            >
+              <img src={Linkedin} alt="" className="w-10" />
+            </a>
+            <a href="https://github.com/shariq-gazdar" target="_blank">
+              <img src={Github} alt="" className="w-10" />
+            </a>
+            <a href="https://www.fiverr.com/ksssrg" target="_blank">
+              <img src={Fiverr} alt="" className="w-10" />
+            </a>
+          </div>
         </div>
         <div
           className="description w-96 text-wrap  mt-20 ml-96 z-10 "
