@@ -33,6 +33,8 @@ function App() {
         "text-white hover:text-orange-400 transition duration-200";
       ProjNav.className =
         "text-white hover:text-orange-400 transition duration-200";
+      AboutNav.className =
+        "text-white hover:text-orange-400 transition duration-200 ";
     }
   };
 
@@ -190,5 +192,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
