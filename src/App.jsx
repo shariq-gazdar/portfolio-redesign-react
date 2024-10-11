@@ -41,8 +41,8 @@ function App() {
   return (
     <div onMouseMove={lightUp} className=" bg-sky-950   text-white  ">
       <div className="glow from-white/5 via-white/5 to-white/5 blur-3xl w-96 h-96 rounded-full bg-gradient-to-t "></div>
-      <div className="wrapper flex justify-center gap-x-28">
-        <div className="info flex  pt-28 flex-col gap-y-2 fixed left-20 text-wrap  ">
+      <div className="wrapper flex flex-col lg:flex-row lg:justify-center gap-x-28">
+        <div className="info flex  pt-28 flex-col gap-y-2 lg:fixed lg:left-20 text-wrap  ">
           <h1 className=" text-4xl text-white font-bold underline decoration-orange-500">
             Shariq Gazdar
           </h1>
@@ -52,7 +52,7 @@ function App() {
             I build pixel-perfect, engaging, and accessible digital experiences.
           </h3>
 
-          <nav className="mt-6 flex flex-col">
+          <nav className="mt-6  flex-col hidden lg:flex">
             <a
               href="#About"
               className="text-white hover:text-orange-400 transition duration-200 "
@@ -76,7 +76,7 @@ function App() {
             </a>
           </nav>
 
-          <div className="socials flex gap-x-5 mt-24">
+          <div className="socials flex gap-x-5 lg:mt-24 mt-5">
             <a
               href="https://www.instagram.com/shari_gazdar?igsh=MTRja2kxaTg0dXNyeA=="
               target="_blank"
@@ -98,7 +98,7 @@ function App() {
           </div>
         </div>
         <div
-          className="description w-96 text-wrap  mt-20 ml-96 z-10 "
+          className="description w-96 text-wrap  mt-20 ml-5 lg:ml-96 z-10 "
           onMouseMove={updateNav}
         >
           <div className="intro" id="About">
