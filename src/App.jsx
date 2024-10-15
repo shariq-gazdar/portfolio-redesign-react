@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div onMouseMove={lightUp} className=" bg-sky-950   text-white  ">
-      <div className="glow from-white/5 via-white/5 to-white/5 blur-3xl w-96 h-96 rounded-full bg-gradient-to-t "></div>
+      <div className="glow from-white/5 via-white/5 to-white/5 blur-3xl w-96 h-96 rounded-full bg-gradient-to-t hidden lg:block "></div>
       <div className="wrapper flex flex-col lg:flex-row lg:justify-center gap-x-28">
         <div className="info flex  pt-28 flex-col gap-y-2 lg:fixed lg:left-20 text-wrap  ">
           <h1 className=" text-4xl text-white font-bold underline decoration-orange-500">
