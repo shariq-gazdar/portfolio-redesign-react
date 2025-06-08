@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Login({ setLogin }) {
+function Login({ login, setLoginState }) {
   const navigate = useNavigate();
   const [type, setType] = useState("password");
   const [password, setPassword] = useState("");
@@ -15,8 +15,10 @@ function Login({ setLogin }) {
     if (!username || !password) {
       return;
     }
+
     if (ogName == username && ogPass == password) {
-      setLogin(true);
+      sessionStorage.setItem("login", true);
+      setLoginState(true);
     } else {
       alert("You are not an admin!");
       navigate("/");

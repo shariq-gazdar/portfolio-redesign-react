@@ -5,7 +5,8 @@ import Github from "../assets/github.svg";
 import Fiverr from "../assets/fiverr.svg";
 import Instagram from "../assets/instagram.svg";
 import Linkedin from "../assets/linkedin.svg";
-
+import Admin from "../assets/admin.png";
+import { Link } from "react-router-dom";
 function Home() {
   const lightUp = (e) => {
     let glow = document.querySelector(".glow");
@@ -191,7 +192,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="admin"></div>
+      <div
+        id="admin"
+        className="bg-white w-14 fixed left-10 bottom-10 rounded-full z-10"
+        title="Admin"
+      >
+        <Link to="/admin">
+          <img src={Admin} alt="admin" className="" />
+        </Link>
+      </div>
     </div>
   );
 }
