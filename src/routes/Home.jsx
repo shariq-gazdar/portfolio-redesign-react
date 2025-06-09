@@ -45,7 +45,7 @@ function Home() {
     >
       <div className="glow from-white/5 via-white/5 to-white/5 blur-3xl w-96 h-96 rounded-full bg-gradient-to-t hidden lg:block "></div>
       <div className="wrapper flex flex-col lg:flex-row lg:justify-center gap-x-28">
-        <div className="info flex  pt-28 flex-col gap-y-2 lg:fixed lg:left-[25%] text-wrap  ">
+        <div className="info flex  pt-28 flex-col gap-y-2 lg:fixed lg:left-[15%] text-wrap  ">
           <h1 className=" text-4xl text-white font-bold underline decoration-orange-500">
             Shariq Gazdar
           </h1>
@@ -194,7 +194,7 @@ function Home() {
       </div>
       <div
         id="admin"
-        className="bg-white w-14 fixed left-10 bottom-10 rounded-full z-10"
+        className="bg-white w-10 fixed right-10 bottom-10 rounded-full z-10"
         title="Admin"
       >
         <Link to="/admin">
