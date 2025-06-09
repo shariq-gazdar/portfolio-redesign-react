@@ -24,7 +24,7 @@ function Projects() {
           initial={{ x: 200 }}
           whileInView={{ x: 0 }}
           transition={{ delay: 0.2 }}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
         >
           <a className="flex items-center mb-4" href={item[3]} target="_blank">
             <img src={item[2]} alt="Spotify Profile" className="w-28 mr-4" />
