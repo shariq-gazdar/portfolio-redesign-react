@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 function Projects() {
   const [value, setValue] = useState([]);
   useEffect(() => {
@@ -18,13 +18,20 @@ function Projects() {
   return (
     <div>
       {value.map((item, index) => (
-        <div key={index} className="py-10 hover:bg-sky-900/50 rounded-xl px-5">
+        <motion.div
+          key={index}
+          className="py-10 hover:bg-sky-900/50 rounded-xl px-5"
+          initial={{ x: 200 }}
+          whileInView={{ x: 0 }}
+          transition={{ delay: 0.2 }}
+          whileHover={{ scale: 1.1 }}
+        >
           <a className="flex items-center mb-4" href={item[3]} target="_blank">
             <img src={item[2]} alt="Spotify Profile" className="w-28 mr-4" />
             <h2 className="text-xl font-bold">{item[0]} ↗</h2>
           </a>
           <p className="text-gray-300 mb-4">{item[1]}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
