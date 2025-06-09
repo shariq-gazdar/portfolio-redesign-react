@@ -152,7 +152,7 @@ function Home() {
           <div className="experience mt-10  " id="experience">
             <div className="max-w-sm   text-white p-6 rounded-lg hover:bg-sky-900/50 ">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-orange-300">2024 — PRESENT</span>
+                <span className="text-orange-300">2024 — 2025</span>
                 <a
                   href="https://trendcraftz.netlify.app/"
                   className="text-gray-400 text-sm  hover:text-orange-400"
