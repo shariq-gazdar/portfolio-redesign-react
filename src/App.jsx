@@ -1,6 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Home from "./routes/Home";
 import Admin from "./routes/Admin";
 
