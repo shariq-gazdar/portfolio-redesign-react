@@ -23,7 +23,7 @@ function Projects() {
           className="py-10 hover:bg-sky-900/50 rounded-xl px-5"
           initial={{ x: 200 }}
           whileInView={{ x: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.11 }}
           whileHover={{ scale: 1.05 }}
         >
           <a className="flex items-center mb-4" href={item[3]} target="_blank">
