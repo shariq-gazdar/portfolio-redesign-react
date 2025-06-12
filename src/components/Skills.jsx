@@ -13,7 +13,11 @@ function Skills() {
       <h1 className="text-white text-3xl font-bold">Skills</h1>
       {skills.map((skill, index) => (
         <div>
-          <CircularProgressbar value={skill} text={`${percentage}%`} />;
+          <CircularProgressbar
+            value={skill.skill}
+            text={`${skill.percentage}%`}
+          />
+          ;
         </div>
       ))}
     </div>
