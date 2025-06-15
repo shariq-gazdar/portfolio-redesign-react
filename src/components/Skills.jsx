@@ -31,13 +31,16 @@ function Skills() {
   return (
     <div className="h-full flex flex-col justify-center mx-[15%] mt-[5%]">
       <h1 className="text-white text-3xl font-bold">Skills</h1>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between items-center mt-10 w-[99%] flex-wrap ">
         {skills.map((skill, index) => (
-          <div>
+          <div
+            className="flex flex-col items-center justify-around h-[200%]"
+            key={index}
+          >
             <CircularProgressbar
               value={parseInt(skill.percentage)}
               text={`${skill.percentage}`}
-              className="w-44"
+              className="w-44 mx-20 my-5"
               styles={{
                 // Customize the root svg element
                 root: {},
@@ -63,7 +66,7 @@ function Skills() {
                 },
               }}
             />
-            <h1 className="text-white">{skill.skill}</h1>
+            <h1 className="text-white text-xl font-bold">{skill.skill}</h1>
           </div>
         ))}
       </div>

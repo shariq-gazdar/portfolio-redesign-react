@@ -74,7 +74,7 @@ function Home() {
     <>
       <div
         onMouseMove={lightUp}
-        className="bg-sky-950 text-white flex justify-center relative"
+        className="bg-sky-950 text-white flex justify-center relative overflow-y-hidden"
       >
         <div className="glow hidden lg:block fixed w-96 h-96 rounded-full blur-3xl bg-gradient-to-t from-white/5 via-white/5 to-white/5 z-0"></div>
 
@@ -82,8 +82,10 @@ function Home() {
           {/* Info Panel */}
           <div
             ref={stickyRef}
-            className={`info flex flex-col gap-y-2 pt-28 text-wrap z-30 w-fit ${
-              stuck ? "absolute left-[15%]" : "fixed top-0 left-[15%]"
+            className={`info flex flex-col gap-y-2 lg:pt-28 text-wrap z-30 w-fit p-5 ${
+              stuck
+                ? "lg:absolute lg:left-[15%] static"
+                : "lg:fixed lg:top-0 lg:left-[15%] static"
             }`}
             style={stuck ? { top: `${stickyTop}px` } : {}}
           >
@@ -203,7 +205,7 @@ function Home() {
         {/* Admin Button */}
         <div
           id="admin"
-          className="bg-white w-10 fixed right-10 bottom-10 rounded-full z-10"
+          className="bg-white w-10 fixed right-10 bottom-10 rounded-full z-10 "
           title="Admin"
         >
           <Link to="/admin">
